@@ -393,10 +393,6 @@ namespace Antmicro.Renode.Peripherals.MTD
             cpu.SetHookAtMemoryAccess(enabled ? hook : null);
         }
 
-
-        private readonly MappedMemory underlyingFlash;
-        private readonly MappedMemory underlyingEeprom;
-
         private DoubleWordRegister programEraseControl;
         private IFlagRegisterField prefetchEnabled;
         private IFlagRegisterField runPowerDown;
